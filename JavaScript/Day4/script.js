@@ -58,3 +58,38 @@
 // let months = ["jan", "feb", "mar", "may", "jun"];
 // months.splice(3, 0, "apr");
 // console.log(months);
+
+// let students = ["Alice", "Bob", "Charlie", "David", "Eve"];
+// students.splice(2, 1);
+// console.log("The updated student array is :", students);
+
+//Array refrences
+// let original = [1, 2, 3];
+// let refrence = original;
+// refrence[0] == 99;
+// console.log("Oringinal", original);
+// console.log("Refrence", refrence);
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+// console.log(arr1 == arr2); //false
+// console.log(arr1 === arr2); //false
+//This is happening because , the comparision is done between the array addresses not the actual value inside it.
+
+// let ticTacToe = [
+//   ["X", "O", "X"],
+//   ["X", "O", "X"],
+//   ["X", "O", "X"],
+// ];
+// ticTacToe[0][1] = "O";
+// ticTacToe[2][2] = "X";
+// ticTacToe[1][1] = "X";
+// console.log(ticTacToe);
+
+// let studentsMarks = [
+//   ["Rahul", 20, 10, 40],
+//   ["Ravi", 50, 80, 30],
+//   ["Priya", 0, 0, -2],
+// ];
+// studentsMarks[2][1] = -5;
+// console.log(studentsMarks);
