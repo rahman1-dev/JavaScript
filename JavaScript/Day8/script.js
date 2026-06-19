@@ -213,19 +213,19 @@
 //       console.log(sec);
 //       sec++;
 //     }, 1000);
-//   },
+//   },8
 //   stop() {},
 //   reset() {},
 // };
 // timer.start();
 
-// let person = {
-//   firstName: "MD",
-//   lastName: "Noman",
-//   greet() {
-//     setTimeout(() => {
-//       console.log(`Hello, ${this.firstName} ${this.lastName}`);
-//     }, 2000);
-//   },
-// };
-// person.greet();
+let person = {
+  firstName: "MD",
+  lastName: "Noman",
+  greet() {
+    setTimeout(() => {
+      console.log(`Hello, ${this.firstName} ${this.lastName}`);
+    }, 2000);
+  },
+};
+person.greet();
