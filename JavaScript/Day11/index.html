@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Photo Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .gallery-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .featured-img {
+        width: 100%;
+        border-radius: 8px;
+        margin: 20px 0;
+      }
+      .thumbnail-container {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .thumbnail {
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 3px solid transparent;
+      }
+      .active-thumb {
+        border-color: #007bff;
+      }
+      .hidden {
+        display: none;
+      }
+      .highlight {
+        background-color: #fff3cd;
+
+        background-color: #fff3cd;
+        padding: 15px;
+        border-left: 4px solid #ffc107;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 5px;
+        font-size: 14px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .danger-btn {
+        background-color: #dc3545;
+      }
+      .danger-btn:hover {
+        background-color: #c82333;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <h1 id="gallery-title" class="gallery-title">My Photo Gallery</h1>
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+        alt="Mountain Landscape"
+        id="featured-image"
+        class="featured-img"
+      />
+      <p id="image-caption">Beautiful mountain landscape at sunset</p>
+      <div class="thumbnail-container" id="thumbnails">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=150"
+          class="thumbnail"
+          alt="Mountains"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=150"
+          class="thumbnail"
+          alt="Forest"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=150"
+          class="thumbnail"
+          alt="Field"
+        />
+      </div>
+      <div id="controls">
+        <button id="add-image-btn">Add New Image</button>
+        <button id="toggle-caption-btn">Toggle Caption</button>
+        <button id="change-title-btn">Change Title</button>
+      </div>
+      <div id="info-section">
+        <h3>Gallery Information</h3>
+        <ul id="info-list">
+          <li>Total Images: 3</li>
+          <li>Category: Nature</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
